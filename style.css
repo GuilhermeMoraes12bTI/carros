@@ -1,54 +1,107 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-
 :root {
-    --orange: #e28625;
-    --green: #006971;
-    --offwhite: rgba(225,225,225, 0.75);
+    --orange:#e28625;
+    --green:#006971;
+    --dark-green:#004140;
+    --brancoprimeiro: rgba(255, 255, 255, 0.75);
     --white: #fff;
-    --grey:#f2f2f2;
-    --dark-green: #004140;
+    --off-white: #f2f2f2;
     font-size: 62.5%;
-
-
 }
 
-.sedans {
-    background: var(--orange);
-}
-
-.suvs {
-    background: var(--green);
-}
-
-.luxuosos {
-    background: var(--dark-green);
-}
 body {
-    background: var(--grey);
-    font-size: 1.6rem;
-    display: flex ;
+    background-color: var(--off-white);
+    display: flex;
     justify-content: center;
-    align-self: center;
     height: 100vh;
-     
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.sedan {
+    background-color: var(--orange);
+    border-radius: 3rem 0rem 0rem 3rem;
+}
+
+.suv {
+    background-color: var(--green);
+}
+
+.luxury {
+    background-color: var(--dark-green);
+    border-radius: 0rem 3rem 3rem 0rem;
+}
 
 main {
     display: flex;
-    height: 100vh;
     width: 92rem;
-    justify-content: center;
-    align-items: center;
 }
 
 h2 {
-    font-family: "Big Shoulders Display";
+    font-family: "Big Shoulders Display", sans-serif;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    color: var(--off-white);
+    font-size: 4rem;
 }
 
 p, a {
-    font-family: "Lexend Deca";
+    font-family: "Lexend Deca", sans-serif;
+}
+
+section {
+    padding: 4.8rem;
+}
+
+p {
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 75%;
+    padding-bottom: 8.2rem;
+}
+
+a {
+    display: block;
+    border: 2px solid var(--off-white);
+    background: var(--off-white);
+    padding: 1.2rem 4.2rem 1.2rem 4.2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border-radius: 2.5rem;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.sedan a {
+    color: var(--orange);
+}
+
+.suv a {
+    color: var(--green);
+}
+
+.luxury a {
+    color: var(--dark-green);
+}
+
+.sedan a:hover {
+    background-color: var(--orange);
+    color: var(--off-white);
+}
+
+.suv a:hover {
+    background-color: var(--green);
+    color: var(--off-white);
+}
+
+.luxury a:hover {
+    background-color: var(--dark-green);
+    color: var(--off-white);
 }
